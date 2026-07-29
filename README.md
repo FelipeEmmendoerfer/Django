@@ -7,9 +7,9 @@ Este projeto é uma aplicação Django simples para cadastro e login de usuário
 - Tela de login
    * Compara a existência do usuário e da senha com as salvas no banco de dados para liberar acesso a "listagem_usuarios"
 - Tela de cadastro
-* Salva os dados do usuário no banco de dados
+  * Salva os dados do usuário no banco de dados
 - Listagem de usuários
-* Exibe o id (enumera por ordem de criação), nome, senha e email. 
+  * Exibe o id (enumera por ordem de criação), nome, senha e email. 
 - Mostrar/ocultar senha
   * Opção adicional apenas para enfeitar
 - Adicionais
