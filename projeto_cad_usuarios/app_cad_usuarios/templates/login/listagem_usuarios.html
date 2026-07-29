@@ -7,7 +7,15 @@
 </head>
 <body>
     <h1>Dados recebidos</h1>
-    <p><strong>Usuário:</strong> {{ nome }}</p>
-    <p><strong>Senha:</strong> {{ senha }}</p>
+
+    {% for usuario in usuarios %}
+        <p><strong>id_usuario:</strong> {{ usuario.id_usuario }}</p>
+        <p><strong>Usuário:</strong> {{ usuario.nome }}</p>
+        <p><strong>Senha:</strong> {{ usuario.senha }}</p>
+        <p><strong>Email:</strong> {{ usuario.email }}</p>
+        <hr>
+    {% empty %}
+        <p>Nenhum usuário cadastrado ainda.</p>
+    {% endfor %}
 </body>
 </html>

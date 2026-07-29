@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id_usuario', models.AutoField(primary_key=True, serialize=False)),
                 ('nome', models.CharField(max_length=100)),
                 ('senha', models.CharField(max_length=10)),
-                ('email', models.EmailField(max_length=254, validators=[app_cad_usuarios.models.validar_email_gmail])),
+                ('email', models.EmailField(max_length=254)),
                 ('data_criacao', models.DateTimeField(auto_now_add=True)),
             ],
         ),
